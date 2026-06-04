@@ -9,7 +9,7 @@ Concepts of OOP:
 # creating a blueprint for a vehicle
 class Vehicle:
     # class attributes
-    name = "Mercedes"
+    name = "Mercedes AMG GLE63"
     yom = 2023
     color = "dark green"
     engine = "v8"
@@ -22,3 +22,25 @@ class Vehicle:
 
     def offroadMode(self):
         print("Offroad mode activated")
+
+    def comfortMode(self):
+        print("Relax and enjoy the ride")
+
+
+vehicle_one = Vehicle()# initializing the class to create an object(instance) of the class
+vehicle_two = Vehicle()# initializing the class to create an object(instance) of the class
+
+print(vehicle_one.name)
+print(vehicle_one.color)
+
+vehicle_one.cruiseMode()
+vehicle_two.comfortMode()
+
+class Animal:
+    def __init__(self, name, species, yob): # constructor method that initializes the attributes of the class
+        self.name = name
+        self.species = species
+        self.__yob = yob #encapculation => making the attribute private by adding __ before the attribute name
+        
+
+  
